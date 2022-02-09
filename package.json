@@ -1,0 +1,12 @@
+{
+  "name": "webscrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "puppeteer": "^13.2.0"
+  }
+}
