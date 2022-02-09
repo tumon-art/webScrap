@@ -10,14 +10,14 @@ import fs from 'fs'
 
     const grabParagraph = await page.evaluate(()=>{
         const headline = document.querySelectorAll('.u-clickable-card__link span')
-        let arr = []
+        let arr :string[] = []
         headline.forEach(e=>{
             arr.push(e.innerHTML)
         })
         return arr
     })
 
-    const data :any = grabParagraph
+    const data :string[] = grabParagraph
     console.log(data)
     fs.writeFile("data.txt",data[0],(err)=>{
         if (err) console.log(err)
